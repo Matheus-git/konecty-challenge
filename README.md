@@ -9,8 +9,7 @@ Este projeto é uma aplicação web de lista de produtos, desenvolvida como part
 - Exibição de uma lista de produtos.
 - Filtro por categoria.
 - Pesquisa por nome de produto.
-- Upload de imagem para o produto.
-- Testes unitários com Jest e React Testing Library.
+- Testes unitários com Jest.
 
 ## Requisitos
 
@@ -24,3 +23,51 @@ Este projeto é uma aplicação web de lista de produtos, desenvolvida como part
    ```bash
    git clone https://github.com/seu-usuario/konecty-challenge.git
    cd konecty-challenge
+
+2. Instale as dependências:
+
+      ```bash
+      npm install
+      ou
+      yarn install
+
+## Uso
+
+1. Inicie o servidor de desenvolvimento:
+
+      ````bash
+      npm run dev
+      ou
+      yarn dev
+
+2. Abra o navegador e acesse http://localhost:3000.
+
+## Testes
+
+1. Para rodar os testes unitários:
+
+      ````bash
+      npm run test
+      ou
+      yarn test
+
+## Estrutura do projeto
+
+         ├── src
+         │   ├── app
+         │   │   ├── api
+         │   │   │   └── products
+         │   │   │       └── route.ts      # API de produtos
+         │   ├── components
+         │   │   ├── ProductCard.tsx       # Componente de card de produto
+         │   │   ├── ImageUpload.tsx       # Componente de upload de imagem
+         │   │   └── __tests__             # Testes dos componentes
+         │   ├── pages
+         │   │   └── index.tsx             # Página principal da aplicação
+         │   └── styles
+         │       └── globals.css           # Estilos globais com TailwindCSS
+         ├── jest.config.js                # Configuração do Jest
+         ├── tailwind.config.js            # Configuração do TailwindCSS
+         └── tsconfig.json                 # Configuração do TypeScript
+
+
